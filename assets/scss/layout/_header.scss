@@ -21,6 +21,10 @@ $header-max-width: $grid;
   padding: 1.5rem 0;
 }
 
+.header__logo{
+  width: 20rem;
+}
+
 .header__logo-link {
   font-family: $font-family-first;
   font-size: 1.25rem;
@@ -32,11 +36,7 @@ $header-max-width: $grid;
 }
 
 .header__logo-link:after {
-  background: $color-black;
-  content: '';
-  display: block;
-  height: 4px;
-  width: 27px;
+
 }
 
 .header__nav {
