@@ -1,0 +1,121 @@
+$about-max-width: $grid;
+$color-orange: $color-corporative;
+$puntos-de-venta__img-box-shadow:0px 0px 27px -7px rgba(0,0,0,0.47);
+$puntos-de-venta-icon-location-color:white;
+$puntos-de-venta-info-color:gray;
+
+.puntos-de-venta{
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; // colocar horizontalmente
+  margin: auto;
+  max-width: $about-max-width;
+  position: relative;
+  z-index: 5;  
+}
+
+.puntos-de-venta__punto-venta{
+  flex: 0 1 100%;
+  padding: 5% 5% 5% 5%;
+  z-index: 5;
+}
+
+.puntos-de-venta__link{
+
+}
+
+.puntos-de-venta__content{
+  box-shadow: 0px 0px 38px -11px rgba(0,0,0,0.37);
+  height: 15rem;
+  text-align: center;
+  transition: background .5s;
+  width: 100%;
+}
+
+.puntos-de-venta__content--gros{
+  background: transparent url('../images/puntos-de-venta/gros.jpg') no-repeat;
+}
+
+.puntos-de-venta__content--hernani{
+  background: transparent url('../images/puntos-de-venta/gros.jpg') no-repeat;
+}
+
+.puntos-de-venta__content--amara{
+  background: transparent url('../images/puntos-de-venta/gros.jpg') no-repeat;
+}
+
+.puntos-de-venta__content--beasain{
+  background: transparent url('../images/puntos-de-venta/gros.jpg') no-repeat;
+}
+
+.icon--location{
+  fill: $puntos-de-venta-icon-location-color;
+  height: 10rem;
+  padding-top: 5rem;
+  transition: visibility 10ms, transform .5s;
+  transform: scale(0.5);
+  visibility: hidden;
+}
+
+.puntos-de-venta__title{
+  font-family: $font-family-first;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.puntos-de-venta__info{
+  color: $puntos-de-venta-info-color;
+  padding-top: .5rem;
+}
+
+
+@media #{$breakpoints-medium} {
+  .puntos-de-venta__punto-venta{
+    flex: 0 1 calc(100%/2);
+  }
+
+  .puntos-de-venta__content:hover{
+    background: $color-orange;
+    border-radius: 50%;
+
+    .icon--location{
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}
+
+@media #{$breakpoints-large} {
+  .puntos-de-venta__punto-venta{
+    flex: 0 1 calc(100%/2);
+  }
+
+  .puntos-de-venta__content:hover{
+    background: $color-orange;
+    border-radius: 50%;
+
+    .icon--location{
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+
+}
+
+@media #{$breakpoints-xlarge} {
+  .puntos-de-venta__punto-venta{
+    flex: 0 1 calc(100%/2);
+  }
+
+  .puntos-de-venta__content:hover{
+    background: $color-orange;
+    border-radius: 50%;
+
+    .icon--location{
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+
+}
