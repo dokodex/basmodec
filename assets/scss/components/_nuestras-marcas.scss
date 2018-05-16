@@ -1,0 +1,55 @@
+$nuestras-marcas-max-width: $grid;
+
+.nuestras-marcas{
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; // colocar horizontalmente
+  margin: auto;
+  max-width: $nuestras-marcas-max-width;
+  position: relative;
+  z-index: 5; 
+}
+
+.nuestras-marcas__box{
+  flex: 0 1 100%;
+  padding: 1rem;
+}
+
+.nuestras-marcas__link{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nuestras-marcas__img{
+  transition: transform .2s;
+  width: 100%;
+}
+
+@media #{$breakpoints-medium} {
+  .nuestras-marcas__box{
+    flex: 0 1 calc( 100%/3 );
+  }
+
+}
+
+@media #{$breakpoints-large} {
+  .nuestras-marcas__box{
+    flex: 0 1 calc( 100%/4 );
+  }
+
+  .nuestras-marcas__img:hover{
+    transform: scale(1.1);
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+  .nuestras-marcas__box{
+    flex: 0 1 calc( 100%/4 );
+  }
+
+  .nuestras-marcas__img:hover{
+    transform: scale(1.1);
+  }
+}

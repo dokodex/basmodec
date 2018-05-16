@@ -1,0 +1,9 @@
+<section class="section nuestras-marcas">
+  {% for marca in site.data.marcas %}
+  <div class="nuestras-marcas__box">
+    <a class="nuestras-marcas__link" href="{{ marca.url }}" target="_blank">
+      <img class="nuestras-marcas__img" src="{{ marca.img }}" alt="">
+    </a>
+  </div>
+  {% endfor %}
+</section>
