@@ -1,0 +1,35 @@
+$noticias-max-width: $grid;
+
+.noticias{
+  align-content: center;
+  margin: auto;
+  max-width: $noticias-max-width;
+  position: relative;
+  z-index: 5;  
+}
+
+.noticias__title{
+  font-family: $font-family-first;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 2rem 3rem 2rem;
+}
+
+.noticias__text{
+  color: gray;
+  column-count: 2;
+  font-family: $font-family-second;
+  font-size: 1.8rem;
+  padding: 2rem 3rem 3rem 3rem;
+  text-align: justify;
+}
+
+.noticias__divimg{
+  text-align: center;
+  width: 100%;
+}
+
+.noticias__img{
+  height: 25rem;
+  text-align: center;
+}
